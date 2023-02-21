@@ -1,0 +1,41 @@
+@use './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Righteous&display=swap');
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-size: .9rem;
+    font-family: variables.$bodyFont;
+}
+
+h1,
+h2,
+h3 {
+    font-family: variables.$headerFont;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    color: darkorange;
+    font-size: .8rem;
+    font-weight: lighter;
+
+    &::after {
+        content: url('../../../assets/line.png');
+        position: relative;
+        bottom: 3px;
+        margin-left: 10px;
+    }
+}
+
+h3 {
+    font-size: 3.5rem;
+}

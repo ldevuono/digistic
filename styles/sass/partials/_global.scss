@@ -1,0 +1,53 @@
+//Wrapper
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+//Stripping styles
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .7rem;
+    background-color: white;
+    border: .5px solid darkorange;
+    border-radius: 30px;
+    padding: 10px 30px;
+    box-shadow: 3px 3px darkorange;
+    margin-top: 20px;
+}
+
+//Global styles
+body {
+    background: rgb(246, 235, 218);
+    background: linear-gradient(44deg, rgba(255, 239, 213, 1) 72%, rgba(255, 218, 185, 0.6278711313627013) 86% 100% no-repeat);
+}
+
+span {
+    display: block;
+}

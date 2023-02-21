@@ -1,0 +1,15 @@
+header {
+    margin: 100px auto;
+
+    .collect {
+        display: flex;
+        align-items: Center;
+    }
+
+    .collect::before {
+        content: url('../../../assets/line.png');
+        position: relative;
+        bottom: 20px;
+        margin-right: 10px;
+    }
+}
