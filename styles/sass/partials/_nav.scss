@@ -1,13 +1,17 @@
 nav {
+    position: sticky;
+    top: 50px;
 
     // logo
+
     img {
         width: 200px;
     }
+
 }
 
 .navFlex {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 100px;
 }

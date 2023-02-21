@@ -330,7 +330,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -346,9 +346,13 @@ h2::after {
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
+nav {
+  position: sticky;
+  top: 50px;
+}
 nav img {
   width: 200px;
 }
@@ -360,11 +364,14 @@ nav img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 header {
   margin: 100px auto;
+  position: relative;
+  padding: 150px 0;
+  overflow-x: clip;
 }
 header .collect {
   display: -webkit-box;
@@ -380,7 +387,37 @@ header .collect::before {
   bottom: 20px;
   margin-right: 10px;
 }
+header .circleSmall {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 0.2px solid darkorange;
+  position: absolute;
+  top: 200px;
+  z-index: -10;
+  right: 180px;
+}
+header .circleMedium {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 0.2px solid darkorange;
+  position: absolute;
+  top: 50px;
+  z-index: -10;
+  right: 30px;
+}
+header .circleLarge {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  border: 0.2px solid darkorange;
+  position: absolute;
+  top: -90px;
+  z-index: -10;
+  right: -100px;
+}
 
 .about {
-  margin: 100px auto;
+  margin: 250px auto;
 }
