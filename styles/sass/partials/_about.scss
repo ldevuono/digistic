@@ -3,11 +3,16 @@
 
     .aboutBodyText {
         width: 50%;
-        margin-left: 300px;
+        margin-left: 350px;
 
         p:first-of-type {
             margin: 20px auto;
+        }
 
+        .particle {
+            position: relative;
+            bottom: 350px;
+            left: 500px;
         }
     }
 
