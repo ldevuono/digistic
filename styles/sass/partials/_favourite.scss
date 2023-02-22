@@ -1,3 +1,21 @@
 .favourite {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+
+    .favouriteText {
+        margin-bottom: 50px;
+    }
+}
+
+// collection gallery
+.collection {
+    display: flex;
+
+    li {
+        margin: 10px;
+        width: calc((100% / 5) - 20px);
+    }
+
+    img {
+        border-radius: 50px;
+    }
 }

@@ -1,0 +1,63 @@
+.roadmap {
+    margin-bottom: 150px;
+
+    ul {
+        margin-top: 100px;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        max-height: 500px;
+
+        img {
+            position: relative;
+            bottom: 400px;
+        }
+    }
+
+    .phase2 {
+        margin-top: 50px;
+        flex-direction: row-reverse;
+
+        img {
+            width: 300px;
+            bottom: 520px;
+            left: 90px;
+        }
+    }
+
+    .phase1Box,
+    .phase2Box {
+        background-color: rgb(255, 218, 185, 0.6);
+        border-radius: 50px;
+        width: 500px;
+        height: 500px;
+        z-index: -10;
+    }
+
+    .phase2Box {
+        background-color: rgb(202, 192, 99, 0.5);
+    }
+
+    .phase1Text,
+    .phase2Text {
+        align-self: center;
+
+        p {
+            width: 60%;
+            margin-top: 20px;
+            line-height: 30px;
+            font-size: .8rem;
+        }
+    }
+
+    .phase2Text {
+
+        h4,
+        h5,
+        p {
+            margin-left: 150px;
+        }
+    }
+}

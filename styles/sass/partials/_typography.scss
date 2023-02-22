@@ -13,8 +13,14 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
     font-family: variables.$headerFont;
+}
+
+h1,
+h2,
+h3 {
     text-transform: uppercase;
 }
 
@@ -38,4 +44,14 @@ h2 {
 
 h3 {
     font-size: 4.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: darkorange;
+    font-weight: lighter;
+}
+
+h5 {
+    font-size: 3rem;
 }
