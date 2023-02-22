@@ -318,8 +318,8 @@ html {
 }
 
 body {
-  font-size: 0.9rem;
   font-family: "Raleway";
+  font-size: 1.2rem;
 }
 
 h1,
@@ -335,7 +335,7 @@ h1 {
 
 h2 {
   color: darkorange;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 h2::after {
@@ -353,25 +353,36 @@ nav {
   position: sticky;
   top: 50px;
 }
-nav img {
-  width: 200px;
-}
-
-.navFlex {
+nav .navFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .navFlex img {
+  width: 200px;
 }
 
 header {
-  margin: 100px auto;
+  margin-top: 150px;
   position: relative;
-  padding: 150px 0;
+  padding-top: 150px;
   overflow-x: clip;
+}
+header .wave {
+  position: relative;
+  left: 150px;
+  bottom: 60px;
+}
+header .cameraFigure {
+  position: relative;
+  left: 10px;
+  bottom: 200px;
 }
 header .collect {
   display: -webkit-box;
@@ -393,9 +404,19 @@ header .circleSmall {
   border-radius: 50%;
   border: 0.2px solid darkorange;
   position: absolute;
-  top: 200px;
+  top: 100px;
   z-index: -10;
-  right: 180px;
+  right: 260px;
+}
+header .circleSmall .ghost {
+  position: relative;
+  top: 10px;
+  left: 60px;
+}
+header .circleSmall .particle {
+  position: relative;
+  bottom: 360px;
+  left: 250px;
 }
 header .circleMedium {
   width: 700px;
@@ -403,9 +424,18 @@ header .circleMedium {
   border-radius: 50%;
   border: 0.2px solid darkorange;
   position: absolute;
-  top: 50px;
+  top: -40px;
   z-index: -10;
-  right: 30px;
+  right: 90px;
+}
+header .circleMedium .ghost {
+  position: relative;
+  top: 500px;
+  left: 0;
+}
+header .circleMedium .particle {
+  position: relative;
+  left: 600px;
 }
 header .circleLarge {
   width: 1000px;
@@ -413,11 +443,49 @@ header .circleLarge {
   border-radius: 50%;
   border: 0.2px solid darkorange;
   position: absolute;
-  top: -90px;
+  top: -180px;
   z-index: -10;
-  right: -100px;
+  right: -50px;
+}
+header .circleLarge .ghost {
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+header .circleLarge .particle {
+  position: relative;
+  top: 600px;
+  left: 250px;
+}
+header .circleLarge .blueHairFigure {
+  position: relative;
+  left: 600px;
+  top: 300px;
 }
 
 .about {
-  margin: 250px auto;
+  margin-bottom: 100px;
+}
+.about .aboutBodyText {
+  width: 50%;
+  margin-left: 300px;
+}
+.about .aboutBodyText p:first-of-type {
+  margin: 20px auto;
+}
+.about .aboutParticles .particle,
+.about .aboutParticles .arrow {
+  position: relative;
+  bottom: 120px;
+}
+.about .aboutParticles .particle:first-of-type,
+.about .aboutParticles .arrow:first-of-type {
+  left: 20px;
+}
+.about .aboutParticles .particle:nth-of-type(2),
+.about .aboutParticles .arrow:nth-of-type(2) {
+  bottom: 50px;
+}
+.about .aboutParticles .arrow {
+  left: 180px;
 }

@@ -1,8 +1,20 @@
 header {
-    margin: 100px auto;
+    margin-top: 150px;
     position: relative;
-    padding: 150px 0;
+    padding-top: 150px;
     overflow-x: clip;
+
+    .wave {
+        position: relative;
+        left: 150px;
+        bottom: 60px;
+    }
+
+    .cameraFigure {
+        position: relative;
+        left: 10px;
+        bottom: 200px;
+    }
 
     .collect {
         display: flex;
@@ -22,9 +34,21 @@ header {
         border-radius: 50%;
         border: .2px solid darkorange;
         position: absolute;
-        top: 200px;
+        top: 100px;
         z-index: -10;
-        right: 180px;
+        right: 260px;
+
+        .ghost {
+            position: relative;
+            top: 10px;
+            left: 60px;
+        }
+
+        .particle {
+            position: relative;
+            bottom: 360px;
+            left: 250px;
+        }
     }
 
     .circleMedium {
@@ -33,9 +57,20 @@ header {
         border-radius: 50%;
         border: .2px solid darkorange;
         position: absolute;
-        top: 50px;
+        top: -40px;
         z-index: -10;
-        right: 30px;
+        right: 90px;
+
+        .ghost {
+            position: relative;
+            top: 500px;
+            left: 0;
+        }
+
+        .particle {
+            position: relative;
+            left: 600px;
+        }
     }
 
     .circleLarge {
@@ -44,8 +79,26 @@ header {
         border-radius: 50%;
         border: .2px solid darkorange;
         position: absolute;
-        top: -90px;
+        top: -180px;
         z-index: -10;
-        right: -100px;
+        right: -50px;
+
+        .ghost {
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+
+        .particle {
+            position: relative;
+            top: 600px;
+            left: 250px;
+        }
+
+        .blueHairFigure {
+            position: relative;
+            left: 600px;
+            top: 300px;
+        }
     }
 }
