@@ -1,6 +1,41 @@
 .roadmap {
     margin-bottom: 400px;
 
+    .particle,
+    .arrow {
+        position: relative;
+    }
+
+    .particle1 {
+        left: 900px;
+        top: 300px;
+    }
+
+    .particle2 {
+        left: 1270px;
+        top: 700px;
+    }
+
+    .particle3 {
+        left: 1160px;
+        top: 750px;
+    }
+
+    .particle4 {
+        top: 1100px;
+        left: 400px;
+    }
+
+    .particle5 {
+        top: 980px;
+        left: 550px;
+    }
+
+    .arrow {
+        top: 600px;
+        left: 300px;
+    }
+
     ul {
         margin-top: 100px;
     }
@@ -49,6 +84,7 @@
             margin-top: 20px;
             line-height: 30px;
             font-size: .8rem;
+            font-weight: normal;
         }
     }
 

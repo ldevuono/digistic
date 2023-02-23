@@ -1,3 +1,20 @@
 .followUs {
     text-align: center;
+
+    p {
+        margin-top: 20px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin: 80px auto;
+
+        li {
+            background-color: white;
+            padding: 30px 90px;
+            margin: 0 10px;
+            border-radius: 150px;
+        }
+    }
 }

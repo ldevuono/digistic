@@ -296,14 +296,16 @@ button {
   all: unset;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   background-color: white;
   border: 0.5px solid darkorange;
-  border-radius: 30px;
-  padding: 10px 30px;
-  -webkit-box-shadow: 3px 3px darkorange;
-          box-shadow: 3px 3px darkorange;
+  border-radius: 35px;
+  padding: 20px 40px;
+  -webkit-box-shadow: 3px 5px darkorange;
+          box-shadow: 3px 5px darkorange;
   margin-top: 20px;
+  color: darkorange;
+  font-weight: bold;
 }
 
 body {
@@ -313,6 +315,10 @@ body {
 
 span {
   display: block;
+}
+
+body {
+  overflow-x: clip;
 }
 
 html {
@@ -365,6 +371,10 @@ h4 {
 
 h5 {
   font-size: 3rem;
+}
+
+p {
+  font-weight: bold;
 }
 
 nav .navFlex {
@@ -509,9 +519,6 @@ header .circleLarge .blueHairFigure {
   left: 180px;
 }
 
-.favourite {
-  margin-bottom: 150px;
-}
 .favourite .favouriteText {
   margin-bottom: 50px;
 }
@@ -531,6 +538,34 @@ header .circleLarge .blueHairFigure {
 
 .roadmap {
   margin-bottom: 400px;
+}
+.roadmap .particle,
+.roadmap .arrow {
+  position: relative;
+}
+.roadmap .particle1 {
+  left: 900px;
+  top: 300px;
+}
+.roadmap .particle2 {
+  left: 1270px;
+  top: 700px;
+}
+.roadmap .particle3 {
+  left: 1160px;
+  top: 750px;
+}
+.roadmap .particle4 {
+  top: 1100px;
+  left: 400px;
+}
+.roadmap .particle5 {
+  top: 980px;
+  left: 550px;
+}
+.roadmap .arrow {
+  top: 600px;
+  left: 300px;
 }
 .roadmap ul {
   margin-top: 100px;
@@ -582,6 +617,7 @@ header .circleLarge .blueHairFigure {
   margin-top: 20px;
   line-height: 30px;
   font-size: 0.8rem;
+  font-weight: normal;
 }
 .roadmap .phase2Text h4,
 .roadmap .phase2Text h5,
@@ -667,15 +703,89 @@ header .circleLarge .blueHairFigure {
   top: 600px;
   left: 1150px;
 }
+.join .circleLarger .commuter3 {
+  left: 960px;
+  bottom: 70px;
+}
+.join .circleLarger .commuter2 {
+  left: 300px;
+}
+.join .circleLarger .commuter5 {
+  left: 950px;
+  top: 930px;
+}
+.join .circleLarger .wave {
+  position: relative;
+}
+.join .circleLarger .wave1 {
+  left: 1300px;
+  bottom: 150px;
+}
+.join .circleLarger .wave2 {
+  left: 870px;
+  top: 620px;
+}
 
 .faq {
   margin-top: 500px;
+}
+.faq ul {
+  margin: 90px 0 0 350px;
+}
+.faq button {
+  all: unset;
+  color: darkorange;
+  font-size: 2rem;
+}
+.faq .hiddenText {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.faq li {
+  margin-bottom: 50px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  width: 75%;
+}
+.faq .wave,
+.faq .particle {
+  position: relative;
+}
+.faq .wave {
+  top: 700px;
+  left: -300px;
+}
+.faq .particle {
+  top: 200px;
 }
 
 .followUs {
   text-align: center;
 }
+.followUs p {
+  margin-top: 20px;
+}
+.followUs .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px auto;
+}
+.followUs .socials li {
+  background-color: white;
+  padding: 30px 90px;
+  margin: 0 10px;
+  border-radius: 150px;
+}
 
 footer {
   text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: 200px;
+}
+footer p {
+  font-weight: normal;
 }
