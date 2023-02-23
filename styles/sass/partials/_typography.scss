@@ -14,13 +14,15 @@ body {
 h1,
 h2,
 h3,
-h5 {
+h5,
+nav {
     font-family: variables.$headerFont;
 }
 
 h1,
 h2,
-h3 {
+h3,
+nav {
     text-transform: uppercase;
 }
 
@@ -58,4 +60,10 @@ h5 {
 
 p {
     font-weight: bold;
+}
+
+nav {
+    a {
+        font-size: 3.5rem;
+    }
 }

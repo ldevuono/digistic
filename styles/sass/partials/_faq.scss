@@ -36,4 +36,10 @@
     .particle {
         top: 200px;
     }
+
+    .hiddenText.hide {
+        .hiddenText {
+            display: none;
+        }
+    }
 }

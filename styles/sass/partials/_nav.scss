@@ -1,16 +1,104 @@
 nav {
-    // position: sticky;
-    // top: 50px;
-
-
     .navFlex {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 50px;
 
         // logo
         img {
             width: 200px;
         }
+
+        // menu
+        .hamburger {
+            cursor: pointer;
+            z-index: 200;
+            position: fixed;
+            right: 200px;
+        }
+    }
+
+    .navLink {
+        opacity: .6;
+    }
+
+    .navSocials {
+        display: flex;
+        margin-top: 50px;
+
+        li {
+            opacity: .6;
+            transition: .3s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        li:not(:first-of-type) {
+            margin-left: 100px;
+        }
+
+    }
+
+    .navLink {
+        transition: 0.7s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover::before {
+            content: url('../../../assets/line.png');
+            position: relative;
+            bottom: 10px;
+            margin-right: 10px;
+        }
+
+        &:hover::after {
+            content: "."
+        }
+    }
+
+    .closeMenu {
+        display: none;
+        transition: .3s ease;
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+        z-index: 100;
+        background-color: papayawhip;
+        padding: 100px 200px;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    .hamburger.active {
+        .openMenu {
+            display: none;
+        }
+
+        .closeMenu {
+            display: block;
+        }
+    }
+
+
+    .navFigure {
+        img {
+            width: 300px;
+        }
+
+        position:relative;
+        left:300px;
     }
 }

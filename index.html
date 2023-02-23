@@ -15,12 +15,32 @@
     <!-- nav -->
     <nav class="wrapper">
         <div class="navFlex">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="./assets/logo-black.svg" alt="Ankit Designs logo">
-            </div>
+            </a>
+            <ul class="navMenu">
+                <li class="navItem"><a class="navLink" href="#">Home</a></li>
+                <li class="navItem"><a class="navLink" href="#about">About</a></li>
+                <li class="navItem"><a class="navLink" href="#roadmap">Roadmap</a></li>
+                <li class="navItem"><a class="navLink" href="#faq">FAQs</a></li>
+                <li>
+                    <ul class="navSocials">
+                        <li class="navItem"><a href="#"><i class="fa-brands fa-twitter"></i></i>
+                            </a></li>
+                        <li class="navItem"><a href="#"><i class="fa-brands fa-facebook-f"></i></i>
+                            </a></li>
+                        <li class="navItem"><a href="#">
+                                <i class="fa-brands fa-instagram"></i></i>
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="navFigure">
+                    <img src="./assets/nav-wrapper-img.png" alt="A person with a camera excited to be here!">
+                </li>
+            </ul>
             <div class="hamburger">
-                <!-- TODO:hamburger menu -->
-                <i class="fa-solid fa-bars fa-2xl"></i>
+                <i class=" openMenu fa-solid fa-bars fa-2xl"></i>
+                <i class="closeMenu fa-solid fa-x fa-2xl"></i>
             </div>
         </div>
     </nav>
@@ -54,7 +74,7 @@
     <!-- main -->
     <main>
         <!-- about -->
-        <section class="wrapper about">
+        <section class="wrapper about" id="about">
             <h2>About</h2>
             <h3>Check Out <span>Awesome</span> <span>Statistics.</span></h3>
             <div class="aboutBodyText">
@@ -99,7 +119,7 @@
             </div>
         </section>
         <!-- roadmap -->
-        <section class="wrapper roadmap">
+        <section class="wrapper roadmap" id="roadmap">
             <img class="particle particle1" src="./assets/particle-black.png" alt="black sparkle">
             <img class="particle particle2" src="./assets/particle-black.png" alt="black sparkle">
             <img class="particle particle3" src="./assets/particle-white.png" alt="white sparkle">
@@ -170,7 +190,7 @@
             </div>
         </section>
         <!-- FAQ -->
-        <section class="wrapper faq">
+        <section class="wrapper faq" id="faq">
             <h2>FAQ</h2>
             <h3>Have Any <span>Questions?</span></h3>
             <img class="wave" src="./assets/banner-wave.png" alt="squiggly line">
@@ -179,7 +199,7 @@
                 <li>
                     <p>
                         Is there a trial version available?</p>
-                    <button>+</button>
+                    <button class="openText">+</button>
                     <p class="hiddenText">Donec laoreet quis eros quis pharetra. Pellentesque eleifend porttitor lacus,
                         et euismod nibh
                         placerat eget. Donec non
@@ -190,7 +210,7 @@
                 </li>
                 <li>
                     <p>Nulla vitae est risus. Aenean aliquam dolor a massa placerat imperdiet?</p>
-                    <button>+</button>
+                    <button class="openText">+</button>
                     <p class="hiddenText">Fusce in sagittis metus, id rutrum justo. Etiam porta rutrum orci ac semper.
                         Proin nisi massa,
                         blandit a consequat
@@ -198,7 +218,7 @@
                 </li>
                 <li>
                     <p>Pellentesque habitant morbi tristique senectus?</p>
-                    <button>+</button>
+                    <button class="openText">+</button>
                     <p class="hiddenText">Fusce in sagittis metus, id rutrum justo. Etiam porta rutrum orci ac semper.
                         Proin nisi massa,
                         blandit a consequat
@@ -206,7 +226,7 @@
                 </li>
                 <li>
                     <p>Aenean aliquam dolor a massa place?</p>
-                    <button>+</button>
+                    <button class="openText">+</button>
                     <p class="hiddenText">Fusce in sagittis metus, id rutrum justo. Etiam porta rutrum orci ac semper.
                         Proin nisi massa,
                         blandit a consequat
@@ -217,7 +237,7 @@
                 <li>
                     <p>Bestibulum consequat leo ac sapien sollicitudin, a pellentesque turpis posuere. Mauris quis
                         nequelibero?</p>
-                    <button>+</button>
+                    <button class="openText">+</button>
                     <p class="hiddenText">Fusce in sagittis metus, id rutrum justo. Etiam porta rutrum orci ac semper.
                         Proin nisi massa,
                         blandit a consequat
