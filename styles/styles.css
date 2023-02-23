@@ -311,18 +311,17 @@ button {
 body {
   background: rgb(246, 235, 218);
   background: linear-gradient(44deg, rgb(255, 239, 213) 72%, rgba(255, 218, 185, 0.6278711314) 86% 100% no-repeat);
+  overflow-x: clip;
 }
 
 span {
   display: block;
 }
 
-body {
-  overflow-x: clip;
-}
-
 html {
   font-size: 125%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 body {
@@ -475,10 +474,12 @@ nav .navFigure img {
 }
 
 header {
-  margin-top: 150px;
   position: relative;
   padding-top: 150px;
   overflow-x: clip;
+}
+header .headerText {
+  margin-left: 300px;
 }
 header .wave {
   position: relative;
@@ -489,6 +490,8 @@ header .cameraFigure {
   position: relative;
   left: 10px;
   bottom: 200px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 header .collect {
   display: -webkit-box;
@@ -893,4 +896,55 @@ footer {
 }
 footer p {
   font-weight: normal;
+}
+
+@media (max-width: 1605px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  header {
+    margin-bottom: 300px;
+  }
+  header .headerText {
+    margin-left: 100px;
+  }
+  header .cameraFigure {
+    display: none;
+  }
+}
+@media (max-width: 1535px) {
+  .join .circleSmall {
+    right: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    margin: 50px auto;
+  }
+  .about .aboutBodyText {
+    margin: 0;
+    width: 70%;
+  }
+  .roadmap li,
+  .roadmap .phase2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+  }
+  .roadmap .phase1Text,
+  .roadmap .phase2Text {
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  .roadmap .phase1Text p,
+  .roadmap .phase2Text p {
+    margin: 0 auto;
+    text-align: justify;
+  }
 }

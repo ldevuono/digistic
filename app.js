@@ -22,6 +22,5 @@ openText.forEach((button, index) => {
     button.addEventListener("click", () => {
         hiddenText[index].classList.toggle("hide");
         openText[index].classList.toggle("hide");
-
     })
 })

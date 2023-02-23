@@ -1,8 +1,11 @@
 header {
-    margin-top: 150px;
     position: relative;
     padding-top: 150px;
     overflow-x: clip;
+
+    .headerText {
+        margin-left: 300px;
+    }
 
     .wave {
         position: relative;
@@ -14,6 +17,7 @@ header {
         position: relative;
         left: 10px;
         bottom: 200px;
+        transition: .3s ease;
     }
 
     .collect {

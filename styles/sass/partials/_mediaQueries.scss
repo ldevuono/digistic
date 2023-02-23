@@ -1,0 +1,67 @@
+@media(max-width:1605px) {
+    //typography 
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    //header 
+    header {
+        .headerText {
+            margin-left: 100px;
+        }
+
+        .cameraFigure {
+            display: none;
+        }
+
+        margin-bottom:300px;
+    }
+}
+
+@media(max-width:1535px) {
+
+    //join us
+    // TODO: DEAL WITH CIRCLES
+    .join {
+        .circleSmall {
+            right: 300px;
+        }
+    }
+}
+
+@media(max-width:1200px) {
+
+    //about
+    .about {
+        margin: 50px auto;
+
+        .aboutBodyText {
+            margin: 0;
+            width: 70%;
+        }
+    }
+
+    //roadmap 
+    .roadmap {
+
+        li,
+        .phase2 {
+            flex-direction: column;
+            margin-bottom: 450px;
+            align-items: center;
+            text-align: justify;
+        }
+
+        .phase1Text,
+        .phase2Text {
+            margin-bottom: 50px;
+            text-align: justify;
+
+            p {
+                margin: 0 auto;
+                text-align: justify;
+            }
+        }
+    }
+}
