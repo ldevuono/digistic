@@ -809,19 +809,33 @@ header .circleLarge .blueHairFigure {
 }
 
 .faq {
-  margin-top: 500px;
+  margin: 500px auto 100px;
 }
 .faq ul {
   margin: 90px 0 0 350px;
 }
-.faq button {
+.faq .faqFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.faq .openText {
   all: unset;
   color: darkorange;
   font-size: 2rem;
+  cursor: pointer;
 }
 .faq .hiddenText {
   font-size: 0.8rem;
   font-weight: normal;
+  display: none;
+  margin-top: 20px;
+}
+.faq .fa-x {
+  display: none;
 }
 .faq li {
   margin-bottom: 50px;
@@ -840,8 +854,14 @@ header .circleLarge .blueHairFigure {
 .faq .particle {
   top: 200px;
 }
-.faq .hiddenText.hide .hiddenText {
+.faq .hiddenText.hide {
+  display: block;
+}
+.faq .openText.hide .fa-plus {
   display: none;
+}
+.faq .openText.hide .fa-x {
+  display: block;
 }
 
 .followUs {

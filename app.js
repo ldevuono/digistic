@@ -18,8 +18,10 @@ document.querySelectorAll(".navLink").forEach((link) => {
 const openText = document.querySelectorAll(".openText");
 const hiddenText = document.querySelectorAll(".hiddenText");
 
-openText.forEach((button) => {
+openText.forEach((button, index) => {
     button.addEventListener("click", () => {
-        hiddenText.classList.toggle("hide");
+        hiddenText[index].classList.toggle("hide");
+        openText[index].classList.toggle("hide");
+
     })
 })

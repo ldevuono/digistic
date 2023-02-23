@@ -1,19 +1,31 @@
 .faq {
-    margin-top: 500px;
+    margin: 500px auto 100px;
 
     ul {
         margin: 90px 0 0 350px;
     }
 
-    button {
+    .faqFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .openText {
         all: unset;
         color: darkorange;
         font-size: 2rem;
+        cursor: pointer;
     }
 
     .hiddenText {
         font-size: .8rem;
         font-weight: normal;
+        display: none;
+        margin-top: 20px;
+    }
+
+    .fa-x {
+        display: none;
     }
 
     li {
@@ -38,8 +50,16 @@
     }
 
     .hiddenText.hide {
-        .hiddenText {
+        display: block;
+    }
+
+    .openText.hide {
+        .fa-plus {
             display: none;
+        }
+
+        .fa-x {
+            display: block;
         }
     }
 }
