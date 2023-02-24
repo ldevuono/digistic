@@ -32,6 +32,35 @@
 
 @media(max-width:1200px) {
 
+    //general {
+    button {
+        font-size: 1rem;
+    }
+
+    // nav 
+    nav {
+        .navFlex {
+            .hamburger {
+                right: 50px;
+            }
+        }
+    }
+
+    //header 
+    header {
+        margin-top: 300px;
+
+        .wave {
+            display: none;
+        }
+
+        .headerText {
+            position: relative;
+            bottom: 360px;
+        }
+    }
+
+
     //about
     .about {
         margin: 50px auto;
@@ -62,6 +91,33 @@
                 margin: 0 auto;
                 text-align: justify;
             }
+        }
+    }
+}
+
+@media (max-width:770px) {
+
+    //typography 
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    //header
+    header {
+        .headerText {
+            margin-left: 20px;
+        }
+
+        .circleSmall {
+            right: 100px;
+        }
+
+        .circleMedium {
+            right: -50px;
+        }
+
+        .circleLarge {
+            right: -200px;
         }
     }
 }

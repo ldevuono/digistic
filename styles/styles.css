@@ -446,7 +446,7 @@ nav .closeMenu {
 }
 nav .navMenu {
   position: fixed;
-  left: -100%;
+  left: -1000%;
   top: 0;
   width: 100%;
   height: 100%;
@@ -918,6 +918,22 @@ footer p {
   }
 }
 @media (max-width: 1200px) {
+  button {
+    font-size: 1rem;
+  }
+  nav .navFlex .hamburger {
+    right: 50px;
+  }
+  header {
+    margin-top: 300px;
+  }
+  header .wave {
+    display: none;
+  }
+  header .headerText {
+    position: relative;
+    bottom: 360px;
+  }
   .about {
     margin: 50px auto;
   }
@@ -946,5 +962,22 @@ footer p {
   .roadmap .phase2Text p {
     margin: 0 auto;
     text-align: justify;
+  }
+}
+@media (max-width: 770px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  header .headerText {
+    margin-left: 20px;
+  }
+  header .circleSmall {
+    right: 100px;
+  }
+  header .circleMedium {
+    right: -50px;
+  }
+  header .circleLarge {
+    right: -200px;
   }
 }
