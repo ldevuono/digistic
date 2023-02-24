@@ -394,7 +394,7 @@ nav .navFlex {
           align-items: center;
   margin-top: 50px;
 }
-nav .navFlex img {
+nav .navFlex .logo {
   width: 200px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -959,6 +959,9 @@ footer p {
   nav .navFlex .hamburger {
     right: 50px;
   }
+  nav .navMenu {
+    padding: 100px;
+  }
   header {
     margin-top: 300px;
   }
@@ -1064,8 +1067,20 @@ footer p {
   p {
     font-size: 0.9rem;
   }
-  nav .navFlex img {
+  nav .navFlex .logo {
     width: 120px;
+  }
+  nav .navMenu a {
+    font-size: 2rem;
+  }
+  nav .navSocials li:not(:first-of-type) {
+    margin-left: 50px;
+  }
+  nav .navFigure {
+    left: 200px;
+  }
+  nav .navFigure img {
+    width: 200px;
   }
   header .headerText {
     margin-left: 20px;
@@ -1132,6 +1147,10 @@ footer p {
   }
 }
 @media (max-width: 600px) {
+  nav .navFigure {
+    left: 90px;
+    top: 50px;
+  }
   header .circleSmall {
     right: 30px;
   }
@@ -1235,5 +1254,36 @@ footer p {
   .join .circleLarge .commuter4 {
     top: 390px;
     left: 65px;
+  }
+}
+@media (max-width: 400px) {
+  .join .circleSmall {
+    right: -10px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+  }
+  .join .circleMedium {
+    width: 400px;
+    height: 400px;
+    right: -60px;
+    top: 90px;
+  }
+  .join .circleLarge {
+    width: 500px;
+    height: 500px;
+    right: -100px;
+    top: 30px;
+  }
+  .join .circleLarge .commuter4 {
+    top: 250px;
+    left: 65px;
+  }
+  .join .circleLarge .commuter1 {
+    top: 50px;
+    left: 60px;
+  }
+  .faq {
+    margin-top: 200px;
   }
 }
