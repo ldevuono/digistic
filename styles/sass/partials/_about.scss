@@ -13,6 +13,7 @@
             position: relative;
             bottom: 350px;
             left: 500px;
+            animation: particleGrow 3s linear infinite;
         }
     }
 
@@ -22,6 +23,7 @@
         .arrow {
             position: relative;
             bottom: 120px;
+            animation: particleGrow 3s linear infinite;
 
             &:first-of-type {
                 left: 20px;
@@ -34,6 +36,7 @@
 
         .arrow {
             left: 180px;
+            animation: none;
         }
     }
 }

@@ -12,9 +12,14 @@
 
     position:relative;
 
+    .particle {
+        animation: particleGrow 3s linear infinite;
+    }
+
     .commuter {
         border-radius: 50%;
         position: relative;
+        animation: float 3s linear infinite;
     }
 
     .circleSmall {
@@ -64,6 +69,7 @@
         .commuter1 {
             top: 100px;
             left: 60px;
+            animation: floatReverse 3s linear infinite;
         }
 
         .commuter4 {
@@ -91,6 +97,7 @@
         .commuter3 {
             left: 960px;
             bottom: 70px;
+            animation: float 4s linear infinite;
         }
 
         .commuter2 {

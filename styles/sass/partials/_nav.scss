@@ -97,6 +97,7 @@ nav {
     .navFigure {
         img {
             width: 300px;
+            animation: float 3s linear infinite;
         }
 
         position:relative;

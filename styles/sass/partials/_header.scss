@@ -18,6 +18,7 @@ header {
         left: 10px;
         bottom: 200px;
         transition: .3s ease;
+        animation: floatReverse 3s linear infinite;
     }
 
     .collect {
@@ -43,17 +44,20 @@ header {
         z-index: -10;
         right: 260px;
 
-        .ghost {
-            position: relative;
-            top: 50px;
-            left: 110px;
-        }
+    }
 
-        .particle {
-            position: relative;
-            bottom: 360px;
-            left: 250px;
-        }
+    .ghost {
+        position: relative;
+        top: 50px;
+        left: 110px;
+        animation: float 3s linear infinite;
+    }
+
+    .particle {
+        position: relative;
+        bottom: 360px;
+        left: 250px;
+        animation: particleGrow 3s linear infinite;
     }
 
     .circleMedium {
@@ -104,6 +108,7 @@ header {
             position: relative;
             left: 690px;
             top: 400px;
+            animation: floatReverse 3s linear infinite;
         }
     }
 }

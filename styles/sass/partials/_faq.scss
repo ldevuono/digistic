@@ -47,6 +47,7 @@
 
     .particle {
         top: 200px;
+        animation: particleGrow 3s linear infinite;
     }
 
     .hiddenText.hide {

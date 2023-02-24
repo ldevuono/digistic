@@ -473,6 +473,8 @@ nav .navFigure {
 }
 nav .navFigure img {
   width: 300px;
+  -webkit-animation: float 3s linear infinite;
+          animation: float 3s linear infinite;
 }
 
 header {
@@ -494,6 +496,8 @@ header .cameraFigure {
   bottom: 200px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-animation: floatReverse 3s linear infinite;
+          animation: floatReverse 3s linear infinite;
 }
 header .collect {
   display: -webkit-box;
@@ -519,15 +523,19 @@ header .circleSmall {
   z-index: -10;
   right: 260px;
 }
-header .circleSmall .ghost {
+header .ghost {
   position: relative;
   top: 50px;
   left: 110px;
+  -webkit-animation: float 3s linear infinite;
+          animation: float 3s linear infinite;
 }
-header .circleSmall .particle {
+header .particle {
   position: relative;
   bottom: 360px;
   left: 250px;
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
 }
 header .circleMedium {
   width: 800px;
@@ -572,6 +580,8 @@ header .circleLarge .blueHairFigure {
   position: relative;
   left: 690px;
   top: 400px;
+  -webkit-animation: floatReverse 3s linear infinite;
+          animation: floatReverse 3s linear infinite;
 }
 
 .about {
@@ -588,11 +598,15 @@ header .circleLarge .blueHairFigure {
   position: relative;
   bottom: 350px;
   left: 500px;
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
 }
 .about .aboutParticles .particle,
 .about .aboutParticles .arrow {
   position: relative;
   bottom: 120px;
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
 }
 .about .aboutParticles .particle:first-of-type,
 .about .aboutParticles .arrow:first-of-type {
@@ -604,6 +618,8 @@ header .circleLarge .blueHairFigure {
 }
 .about .aboutParticles .arrow {
   left: 180px;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .favourite .favouriteText {
@@ -631,6 +647,8 @@ header .circleLarge .blueHairFigure {
 .roadmap .particle,
 .roadmap .arrow {
   position: relative;
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
 }
 .roadmap .particle1 {
   left: 900px;
@@ -655,6 +673,8 @@ header .circleLarge .blueHairFigure {
 .roadmap .arrow {
   top: 600px;
   left: 300px;
+  -webkit-animation: none;
+          animation: none;
 }
 .roadmap ul {
   margin-top: 100px;
@@ -671,6 +691,8 @@ header .circleLarge .blueHairFigure {
 .roadmap li img {
   position: relative;
   bottom: 400px;
+  -webkit-animation: float 3s linear infinite;
+          animation: float 3s linear infinite;
 }
 .roadmap .phase2 {
   margin-top: 50px;
@@ -683,6 +705,8 @@ header .circleLarge .blueHairFigure {
   width: 300px;
   bottom: 520px;
   left: 90px;
+  -webkit-animation: floatReverse 3s linear infinite;
+          animation: floatReverse 3s linear infinite;
 }
 .roadmap .phase1Box,
 .roadmap .phase2Box {
@@ -725,9 +749,15 @@ header .circleLarge .blueHairFigure {
   width: 50%;
   margin: 0 auto;
 }
+.join .particle {
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
+}
 .join .commuter {
   border-radius: 50%;
   position: relative;
+  -webkit-animation: float 3s linear infinite;
+          animation: float 3s linear infinite;
 }
 .join .circleSmall {
   width: 600px;
@@ -772,6 +802,8 @@ header .circleLarge .blueHairFigure {
 .join .circleLarge .commuter1 {
   top: 100px;
   left: 60px;
+  -webkit-animation: floatReverse 3s linear infinite;
+          animation: floatReverse 3s linear infinite;
 }
 .join .circleLarge .commuter4 {
   top: 650px;
@@ -795,6 +827,8 @@ header .circleLarge .blueHairFigure {
 .join .circleLarger .commuter3 {
   left: 960px;
   bottom: 70px;
+  -webkit-animation: float 4s linear infinite;
+          animation: float 4s linear infinite;
 }
 .join .circleLarger .commuter2 {
   left: 300px;
@@ -860,6 +894,8 @@ header .circleLarge .blueHairFigure {
 }
 .faq .particle {
   top: 200px;
+  -webkit-animation: particleGrow 3s linear infinite;
+          animation: particleGrow 3s linear infinite;
 }
 .faq .hiddenText.hide {
   display: block;
@@ -1285,5 +1321,65 @@ footer p {
   }
   .faq {
     margin-top: 200px;
+  }
+}
+@-webkit-keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+@-webkit-keyframes floatReverse {
+  0%, 100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes floatReverse {
+  0%, 100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes particleGrow {
+  0%, 100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes particleGrow {
+  0%, 100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
