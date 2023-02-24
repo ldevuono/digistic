@@ -929,7 +929,16 @@ footer p {
     width: 300px;
   }
   .join .circleSmall {
-    right: 300px;
+    right: 250px;
+  }
+  .join .circleMedium {
+    right: 150px;
+  }
+  .join .circleLarge {
+    right: 60px;
+  }
+  .join .circleLarger {
+    right: -20px;
   }
 }
 @media (max-width: 1200px) {
@@ -1009,6 +1018,21 @@ footer p {
     margin: 0;
     text-align: justify;
   }
+  .join .joinText p {
+    display: none;
+  }
+  .join .circleSmall {
+    right: 100px;
+  }
+  .join .circleMedium {
+    right: 20px;
+  }
+  .join .circleLarge {
+    right: -80px;
+  }
+  .join .circleLarger {
+    display: none;
+  }
 }
 @media (max-width: 770px) {
   h1 {
@@ -1070,6 +1094,22 @@ footer p {
   .roadmap .phase2Text p {
     width: 100%;
   }
+  .join .circleSmall {
+    right: 20px;
+    width: 450px;
+    height: 450px;
+  }
+  .join .circleMedium {
+    width: 600px;
+    height: 600px;
+    right: -60px;
+    top: 10px;
+  }
+  .join .circleLarge {
+    width: 800px;
+    height: 800px;
+    right: -150px;
+  }
 }
 @media (max-width: 600px) {
   header .circleSmall {
@@ -1112,6 +1152,28 @@ footer p {
   .roadmap .phase1Text p,
   .roadmap .phase2Text p {
     width: 100%;
+  }
+  .join .circleSmall {
+    right: 55px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+  }
+  .join .circleMedium {
+    width: 500px;
+    height: 500px;
+    right: -30px;
+    top: 50px;
+  }
+  .join .circleLarge {
+    width: 650px;
+    height: 650px;
+    right: -100px;
+    top: -10px;
+  }
+  .join .circleLarge .commuter4 {
+    top: 390px;
+    left: 65px;
   }
 }
 @media (max-width: 480px) {
