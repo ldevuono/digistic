@@ -44,6 +44,14 @@ button {
     margin-top: 20px;
     color: darkorange;
     font-weight: bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darkorange;
+        color: white;
+        box-shadow: none;
+    }
 }
 
 //Global styles

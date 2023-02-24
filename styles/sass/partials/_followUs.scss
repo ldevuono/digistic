@@ -15,6 +15,12 @@
             padding: 30px 90px;
             margin: 0 10px;
             border-radius: 150px;
+
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: .6;
+            }
         }
     }
 }

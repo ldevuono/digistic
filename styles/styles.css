@@ -307,6 +307,12 @@ button {
   color: darkorange;
   font-weight: bold;
 }
+button:hover, button:active, button:focus {
+  background-color: darkorange;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 body {
   background: rgb(246, 235, 218);
@@ -527,8 +533,8 @@ header .ghost {
   position: relative;
   top: 50px;
   left: 110px;
-  -webkit-animation: float 3s linear infinite;
-          animation: float 3s linear infinite;
+  -webkit-animation: float 3.5s linear infinite;
+          animation: float 3.5s linear infinite;
 }
 header .particle {
   position: relative;
@@ -927,6 +933,9 @@ header .circleLarge .blueHairFigure {
   padding: 30px 90px;
   margin: 0 10px;
   border-radius: 150px;
+}
+.followUs .socials li:hover, .followUs .socials li:focus, .followUs .socials li:active {
+  opacity: 0.6;
 }
 
 footer {
