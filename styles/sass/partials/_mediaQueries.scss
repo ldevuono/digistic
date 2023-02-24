@@ -52,6 +52,23 @@
             right: -20px;
         }
     }
+
+    //faq 
+    .faq {
+        ul {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        .particle {
+            top: -100px;
+            left: 500px;
+        }
+    }
 }
 
 @media(max-width:1200px) {
@@ -175,6 +192,17 @@
 
         .circleLarger {
             display: none;
+        }
+    }
+
+    //follow us
+    .followUs {
+        .socials {
+            flex-direction: column;
+
+            li {
+                margin: 20px auto;
+            }
         }
     }
 }
@@ -386,6 +414,14 @@
             }
         }
     }
+
+    //faq 
+    .faq {
+        .particle {
+            left: 250px;
+            top: -250px;
+        }
+    }
 }
 
 @media (max-width:480px) {
@@ -407,6 +443,35 @@
 
         .circleLarge {
             right: -300px;
+        }
+    }
+
+    //join us
+    .join {
+        .circleSmall {
+            right: 20px;
+            top: 150px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .circleMedium {
+            width: 500px;
+            height: 500px;
+            right: -60px;
+            top: 50px;
+        }
+
+        .circleLarge {
+            width: 600px;
+            height: 600px;
+            right: -120px;
+            top: -10px;
+
+            .commuter4 {
+                top: 390px;
+                left: 65px;
+            }
         }
     }
 }

@@ -940,6 +940,17 @@ footer p {
   .join .circleLarger {
     right: -20px;
   }
+  .faq ul {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .faq li {
+    width: 100%;
+  }
+  .faq .particle {
+    top: -100px;
+    left: 500px;
+  }
 }
 @media (max-width: 1200px) {
   button {
@@ -1032,6 +1043,15 @@ footer p {
   }
   .join .circleLarger {
     display: none;
+  }
+  .followUs .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .followUs .socials li {
+    margin: 20px auto;
   }
 }
 @media (max-width: 770px) {
@@ -1175,6 +1195,10 @@ footer p {
     top: 390px;
     left: 65px;
   }
+  .faq .particle {
+    left: 250px;
+    top: -250px;
+  }
 }
 @media (max-width: 480px) {
   header .circleSmall {
@@ -1189,5 +1213,27 @@ footer p {
   }
   header .circleLarge {
     right: -300px;
+  }
+  .join .circleSmall {
+    right: 20px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+  }
+  .join .circleMedium {
+    width: 500px;
+    height: 500px;
+    right: -60px;
+    top: 50px;
+  }
+  .join .circleLarge {
+    width: 600px;
+    height: 600px;
+    right: -120px;
+    top: -10px;
+  }
+  .join .circleLarge .commuter4 {
+    top: 390px;
+    left: 65px;
   }
 }
