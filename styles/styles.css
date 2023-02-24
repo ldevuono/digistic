@@ -1185,8 +1185,8 @@ footer p {
             align-items: center;
   }
   .roadmap .phase2 img {
-    width: 220px;
-    bottom: 420px;
+    width: 200px;
+    bottom: 390px;
   }
   .roadmap .phase1Text p,
   .roadmap .phase2Text p {
@@ -1256,7 +1256,7 @@ footer p {
     left: 65px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .join .circleSmall {
     right: -10px;
     top: 150px;
