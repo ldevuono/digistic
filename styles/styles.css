@@ -902,6 +902,9 @@ footer p {
   h1 {
     font-size: 4.5rem;
   }
+  h3 {
+    font-size: 3.5rem;
+  }
   header {
     margin-bottom: 300px;
   }
@@ -935,7 +938,7 @@ footer p {
     bottom: 360px;
   }
   .about {
-    margin: 50px auto;
+    padding-top: 100px;
   }
   .about .aboutBodyText {
     margin: 0;
@@ -966,7 +969,13 @@ footer p {
 }
 @media (max-width: 770px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 0.9rem;
   }
   header .headerText {
     margin-left: 20px;
@@ -979,5 +988,58 @@ footer p {
   }
   header .circleLarge {
     right: -200px;
+  }
+  header .circleLarge .blueHairFigure {
+    width: 20%;
+    left: 600px;
+    top: 500px;
+  }
+  .about {
+    padding-top: 200px;
+  }
+  .about .aboutBodyText {
+    width: 100%;
+  }
+  .about .aboutParticles .particle,
+  .about .aboutParticles .arrow {
+    bottom: -20px;
+  }
+  .about .aboutParticles .particle:first-of-type,
+  .about .aboutParticles .arrow:first-of-type {
+    left: 60px;
+  }
+  .about .aboutParticles .particle:nth-of-type(2),
+  .about .aboutParticles .arrow:nth-of-type(2) {
+    bottom: 50px;
+  }
+}
+@media (max-width: 600px) {
+  header .circleSmall {
+    right: 30px;
+  }
+  header .circleSmall .ghost {
+    width: 50%;
+    top: 100px;
+  }
+  header .circleMedium {
+    right: -100px;
+  }
+  header .circleLarge {
+    right: -250px;
+  }
+}
+@media (max-width: 480px) {
+  header .circleSmall {
+    right: -30px;
+  }
+  header .circleSmall .ghost {
+    width: 50%;
+    top: 100px;
+  }
+  header .circleMedium {
+    right: -150px;
+  }
+  header .circleLarge {
+    right: -300px;
   }
 }

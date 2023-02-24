@@ -5,6 +5,10 @@
         font-size: 4.5rem;
     }
 
+    h3 {
+        font-size: 3.5rem;
+    }
+
     //header 
     header {
         .headerText {
@@ -60,10 +64,9 @@
         }
     }
 
-
     //about
     .about {
-        margin: 50px auto;
+        padding-top: 100px;
 
         .aboutBodyText {
             margin: 0;
@@ -99,7 +102,15 @@
 
     //typography 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: .9rem;
     }
 
     //header
@@ -118,6 +129,83 @@
 
         .circleLarge {
             right: -200px;
+
+            .blueHairFigure {
+                width: 20%;
+                left: 600px;
+                top: 500px;
+            }
+        }
+    }
+
+    //about
+    .about {
+        padding-top: 200px;
+
+        .aboutBodyText {
+            width: 100%;
+        }
+
+        .aboutParticles {
+
+            .particle,
+            .arrow {
+                bottom: -20px;
+
+                &:first-of-type {
+                    left: 60px;
+                }
+
+                &:nth-of-type(2) {
+                    bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+
+    //header
+    header {
+        .circleSmall {
+            right: 30px;
+
+            .ghost {
+                width: 50%;
+                top: 100px;
+            }
+        }
+
+        .circleMedium {
+            right: -100px;
+        }
+
+        .circleLarge {
+            right: -250px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+
+    //header
+    header {
+        .circleSmall {
+            right: -30px;
+
+            .ghost {
+                width: 50%;
+                top: 100px;
+            }
+        }
+
+        .circleMedium {
+            right: -150px;
+        }
+
+        .circleLarge {
+            right: -300px;
         }
     }
 }
