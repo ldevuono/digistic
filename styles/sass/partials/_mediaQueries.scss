@@ -25,6 +25,15 @@
 
 @media(max-width:1535px) {
 
+    //favourite
+    .collection {
+        justify-content: center;
+
+        img {
+            width: 300px;
+        }
+    }
+
     //join us
     // TODO: DEAL WITH CIRCLES
     .join {
@@ -72,17 +81,48 @@
             margin: 0;
             width: 70%;
         }
+
+        .aboutParticles {
+
+            .particle,
+            .arrow {
+                bottom: -20px;
+
+                &:first-of-type {
+                    left: 60px;
+                }
+
+                &:nth-of-type(2) {
+                    bottom: 50px;
+                }
+            }
+        }
+    }
+
+    //favourite
+    .collection {
+        justify-content: center;
+
+        li {
+            margin: 5px;
+        }
+
+        img {
+            width: 200px;
+        }
     }
 
     //roadmap 
     .roadmap {
+        .arrow {
+            display: none;
+        }
 
         li,
         .phase2 {
             flex-direction: column;
             margin-bottom: 450px;
-            align-items: center;
-            text-align: justify;
+            align-items: flex-start;
         }
 
         .phase1Text,
@@ -90,8 +130,13 @@
             margin-bottom: 50px;
             text-align: justify;
 
+            h4,
+            h5 {
+                margin-left: auto;
+            }
+
             p {
-                margin: 0 auto;
+                margin: 0;
                 text-align: justify;
             }
         }
@@ -111,6 +156,17 @@
 
     p {
         font-size: .9rem;
+    }
+
+    //nav 
+    nav {
+        .navFlex {
+
+            // logo
+            img {
+                width: 120px;
+            }
+        }
     }
 
     //header
@@ -145,20 +201,42 @@
         .aboutBodyText {
             width: 100%;
         }
+    }
 
-        .aboutParticles {
+    //favourite
+    .collection {
+        display: flex;
 
-            .particle,
-            .arrow {
-                bottom: -20px;
+        li {
+            margin: 10px auto;
+            width: 60%;
 
-                &:first-of-type {
-                    left: 60px;
-                }
+            img {
+                width: 100%;
+            }
+        }
+    }
 
-                &:nth-of-type(2) {
-                    bottom: 50px;
-                }
+    //roadmap
+    .roadmap {
+        li {
+            img {
+                width: 400px;
+                left: 50px;
+                bottom: 450px;
+            }
+        }
+
+        .phase2 {
+            img {
+                width: 250px;
+            }
+        }
+
+        .phase1Text,
+        .phase2Text {
+            p {
+                width: 100%;
             }
         }
     }
@@ -183,6 +261,42 @@
 
         .circleLarge {
             right: -250px;
+        }
+    }
+
+    //roadmap
+    .roadmap {
+
+        .phase1Box,
+        .phase2Box {
+            width: 350px;
+            height: 350px;
+        }
+
+        li {
+            align-items: center;
+
+            img {
+                width: 350px;
+                left: 10px;
+                bottom: 350px;
+            }
+        }
+
+        .phase2 {
+            align-items: center;
+
+            img {
+                width: 220px;
+                bottom: 420px;
+            }
+        }
+
+        .phase1Text,
+        .phase2Text {
+            p {
+                width: 100%;
+            }
         }
     }
 }

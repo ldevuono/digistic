@@ -8,6 +8,7 @@
 // collection gallery
 .collection {
     display: flex;
+    flex-wrap: wrap;
 
     li {
         margin: 10px;

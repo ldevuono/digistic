@@ -396,6 +396,8 @@ nav .navFlex {
 }
 nav .navFlex img {
   width: 200px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 nav .navFlex .hamburger {
   cursor: pointer;
@@ -612,6 +614,8 @@ header .circleLarge .blueHairFigure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .collection li {
   margin: 10px;
@@ -916,6 +920,14 @@ footer p {
   }
 }
 @media (max-width: 1535px) {
+  .collection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .collection img {
+    width: 300px;
+  }
   .join .circleSmall {
     right: 300px;
   }
@@ -944,6 +956,32 @@ footer p {
     margin: 0;
     width: 70%;
   }
+  .about .aboutParticles .particle,
+  .about .aboutParticles .arrow {
+    bottom: -20px;
+  }
+  .about .aboutParticles .particle:first-of-type,
+  .about .aboutParticles .arrow:first-of-type {
+    left: 60px;
+  }
+  .about .aboutParticles .particle:nth-of-type(2),
+  .about .aboutParticles .arrow:nth-of-type(2) {
+    bottom: 50px;
+  }
+  .collection {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .collection li {
+    margin: 5px;
+  }
+  .collection img {
+    width: 200px;
+  }
+  .roadmap .arrow {
+    display: none;
+  }
   .roadmap li,
   .roadmap .phase2 {
     -webkit-box-orient: vertical;
@@ -951,19 +989,24 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 450px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: justify;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .roadmap .phase1Text,
   .roadmap .phase2Text {
     margin-bottom: 50px;
     text-align: justify;
   }
+  .roadmap .phase1Text h4,
+  .roadmap .phase1Text h5,
+  .roadmap .phase2Text h4,
+  .roadmap .phase2Text h5 {
+    margin-left: auto;
+  }
   .roadmap .phase1Text p,
   .roadmap .phase2Text p {
-    margin: 0 auto;
+    margin: 0;
     text-align: justify;
   }
 }
@@ -976,6 +1019,9 @@ footer p {
   }
   p {
     font-size: 0.9rem;
+  }
+  nav .navFlex img {
+    width: 120px;
   }
   header .headerText {
     margin-left: 20px;
@@ -1000,17 +1046,29 @@ footer p {
   .about .aboutBodyText {
     width: 100%;
   }
-  .about .aboutParticles .particle,
-  .about .aboutParticles .arrow {
-    bottom: -20px;
+  .collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .about .aboutParticles .particle:first-of-type,
-  .about .aboutParticles .arrow:first-of-type {
-    left: 60px;
+  .collection li {
+    margin: 10px auto;
+    width: 60%;
   }
-  .about .aboutParticles .particle:nth-of-type(2),
-  .about .aboutParticles .arrow:nth-of-type(2) {
-    bottom: 50px;
+  .collection li img {
+    width: 100%;
+  }
+  .roadmap li img {
+    width: 400px;
+    left: 50px;
+    bottom: 450px;
+  }
+  .roadmap .phase2 img {
+    width: 250px;
+  }
+  .roadmap .phase1Text p,
+  .roadmap .phase2Text p {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1026,6 +1084,34 @@ footer p {
   }
   header .circleLarge {
     right: -250px;
+  }
+  .roadmap .phase1Box,
+  .roadmap .phase2Box {
+    width: 350px;
+    height: 350px;
+  }
+  .roadmap li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .roadmap li img {
+    width: 350px;
+    left: 10px;
+    bottom: 350px;
+  }
+  .roadmap .phase2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .roadmap .phase2 img {
+    width: 220px;
+    bottom: 420px;
+  }
+  .roadmap .phase1Text p,
+  .roadmap .phase2Text p {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
