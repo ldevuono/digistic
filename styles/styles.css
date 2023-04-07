@@ -985,6 +985,14 @@ footer p {
   .join .circleLarger {
     right: -20px;
   }
+  .join .circleLarger .wave1 {
+    display: none;
+  }
+  .roadmap .particle2,
+  .roadmap .particle3,
+  .roadmap .wave1 {
+    display: none;
+  }
   .faq ul {
     margin-left: 0;
     margin-top: 20px;
@@ -1048,6 +1056,9 @@ footer p {
     width: 200px;
   }
   .roadmap .arrow {
+    display: none;
+  }
+  .roadmap .particle1 {
     display: none;
   }
   .roadmap li,
@@ -1185,6 +1196,9 @@ footer p {
     right: -60px;
     top: 10px;
   }
+  .join .circleMedium .particle {
+    display: none;
+  }
   .join .circleLarge {
     width: 800px;
     height: 800px;
@@ -1209,10 +1223,17 @@ footer p {
   header .circleLarge {
     right: -250px;
   }
+  .about .aboutBodyText .particle {
+    display: none;
+  }
   .roadmap .phase1Box,
   .roadmap .phase2Box {
     width: 350px;
     height: 350px;
+  }
+  .roadmap .particle5,
+  .roadmap .particle4 {
+    display: none;
   }
   .roadmap li {
     -webkit-box-align: center;

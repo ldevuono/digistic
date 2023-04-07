@@ -50,6 +50,19 @@
 
         .circleLarger {
             right: -20px;
+
+            .wave1 {
+                display: none;
+            }
+        }
+    }
+
+    .roadmap {
+
+        .particle2,
+        .particle3,
+        .wave1 {
+            display: none;
         }
     }
 
@@ -147,6 +160,10 @@
     //roadmap 
     .roadmap {
         .arrow {
+            display: none;
+        }
+
+        .particle1 {
             display: none;
         }
 
@@ -342,6 +359,10 @@
             height: 600px;
             right: -60px;
             top: 10px;
+
+            .particle {
+                display: none;
+            }
         }
 
         .circleLarge {
@@ -382,6 +403,14 @@
         }
     }
 
+    .about {
+        .aboutBodyText {
+            .particle {
+                display: none;
+            }
+        }
+    }
+
     //roadmap
     .roadmap {
 
@@ -389,6 +418,11 @@
         .phase2Box {
             width: 350px;
             height: 350px;
+        }
+
+        .particle5,
+        .particle4 {
+            display: none;
         }
 
         li {
