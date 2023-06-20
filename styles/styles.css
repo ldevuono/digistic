@@ -503,6 +503,7 @@ header .wave {
   bottom: 60px;
 }
 header .cameraFigure {
+  pointer-events: none;
   position: relative;
   left: 10px;
   bottom: 200px;
@@ -608,7 +609,7 @@ header .circleLarge .blueHairFigure {
 }
 .about .aboutBodyText .particle {
   position: relative;
-  bottom: 350px;
+  bottom: 300px;
   left: 500px;
   -webkit-animation: particleGrow 3s linear infinite;
           animation: particleGrow 3s linear infinite;
