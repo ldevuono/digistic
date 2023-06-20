@@ -327,7 +327,7 @@ span {
 html,
 body,
 main {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -947,7 +947,7 @@ header .circleLarge .blueHairFigure {
 footer {
   text-align: center;
   font-size: 0.7rem;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 footer p {
   font-weight: normal;
