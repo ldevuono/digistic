@@ -58,7 +58,9 @@ button {
 body {
     background: rgb(246, 235, 218);
     background: linear-gradient(44deg, rgba(255, 239, 213, 1) 72%, rgba(255, 218, 185, 0.6278711313627013) 86% 100% no-repeat);
+    max-width: 100%;
 }
+
 
 span {
     display: block;

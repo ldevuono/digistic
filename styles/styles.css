@@ -317,14 +317,17 @@ button:hover, button:active, button:focus {
 body {
   background: rgb(246, 235, 218);
   background: linear-gradient(44deg, rgb(255, 239, 213) 72%, rgba(255, 218, 185, 0.6278711314) 86% 100% no-repeat);
+  max-width: 100%;
 }
 
 span {
   display: block;
 }
 
+html,
+body,
 main {
-  overflow-x: clip;
+  overflow: hidden;
 }
 
 html {
